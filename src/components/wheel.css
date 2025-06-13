@@ -1,0 +1,106 @@
+.ruleta-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ca8a04;
+}
+
+.formulario {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.formulario input {
+  padding: 0.5rem;
+  border: 1px solid #facc15;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.formulario button {
+  background-color: #facc15;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.formulario .secundario {
+  background-color: #f87171;
+}
+
+.girar-boton {
+  background-color: #4ade80;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.resultado {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #7c3aed;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #10b981;
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.modal-content button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
